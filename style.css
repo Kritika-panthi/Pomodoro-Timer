@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.modes {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.modes button {
+  background-color: #bbdefb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #0d47a1;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modes button.active {
+  background-color: #0d47a1;
+  color: white;
+}
+
+.timer-wrapper {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin-bottom: 30px;
+}
+
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring-background {
+  fill: none;
+  stroke:  #ddd;
+  stroke-width: 10;
+}
+
+.progress-ring-circle {
+  fill: none;
+  stroke: #0d47a1;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s linear;
+}
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+}
+
+.controls button {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.controls button:hover {
+  background-color: #1565c0;
+}
